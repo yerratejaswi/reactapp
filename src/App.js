@@ -26,7 +26,7 @@ export function Requirement1(){
   return (
     <div class="main-div">
       <h1> Part_1 Requirement 2: A Line Chart to plot the issues for every Repo</h1>
-      <FetchAPI URL="https://flaskappspm-hij6xhfi2q-uc.a.run.app//fetch/issuesline" />
+      <FetchAPI URL="https://flaskapp-lt5guyluea-uc.a.run.app/fetch/issuesline" />
     </div>
   )
 }
@@ -36,11 +36,11 @@ export function Requirement2(){
     <div class="main-div">
     <h1>Requirement 3: A Bar Chart to plot the issues created for every month for every Repo</h1>
     <div class="grid-container">
-      <FetchAPI class="grid-item" URL="https://flaskappspm-hij6xhfi2q-uc.a.run.app/fetch/issues/created/repo=1" />
-      <FetchAPI class="grid-item" URL="https://flaskappspm-hij6xhfi2q-uc.a.run.app/fetch/issues/created/repo=2" />
-      <FetchAPI class="grid-item" URL="https://flaskappspm-hij6xhfi2q-uc.a.run.app/fetch/issues/created/repo=3" />
-      <FetchAPI class="grid-item" URL="https://flaskappspm-hij6xhfi2q-uc.a.run.app/fetch/issues/created/repo=4" />
-      <FetchAPI class="grid-item" URL="https://flaskappspm-hij6xhfi2q-uc.a.run.app/fetch/issues/created/repo=5" />
+      <FetchAPI class="grid-item" URL="https://flaskapp-lt5guyluea-uc.a.run.app/fetch/issues/created/repo=1" />
+      <FetchAPI class="grid-item" URL="https://flaskapp-lt5guyluea-uc.a.run.app/fetch/issues/created/repo=2" />
+      <FetchAPI class="grid-item" URL="https://flaskapp-lt5guyluea-uc.a.run.app/fetch/issues/created/repo=3" />
+      <FetchAPI class="grid-item" URL="https://flaskapp-lt5guyluea-uc.a.run.app/fetch/issues/created/repo=4" />
+      <FetchAPI class="grid-item" URL="https://flaskapp-lt5guyluea-uc.a.run.app/fetch/issues/created/repo=5" />
     </div>
   </div>
 )
@@ -49,7 +49,7 @@ export function Requirement3(){
   return (
     <div class="main-div">
     <h1>Requirement 4: A Bar Chart to plot the stars for every Repo</h1>
-      <FetchAPI class="grid-item" URL="https://flaskappspm-hij6xhfi2q-uc.a.run.app/fetch/stars" />
+      <FetchAPI class="grid-item" URL="https://flaskapp-lt5guyluea-uc.a.run.app/fetch/stars" />
   </div>
 )
 }
@@ -58,7 +58,7 @@ export function Requirement4(){
   return (
     <div class="main-div">
     <h1>Requirement 5: A Bar Chart to plot the forks for every Repo</h1>
-      <FetchAPI class="grid-item" URL="https://flaskappspm-hij6xhfi2q-uc.a.run.app/fetch/forks" />
+      <FetchAPI class="grid-item" URL="https://flaskapp-lt5guyluea-uc.a.run.app/fetch/forks" />
   </div>
 )
 }
@@ -68,7 +68,7 @@ export function Requirement5() {
       <h1>Requirement 6: A Bar Chart to plot the issues closed for every week for everyRepo</h1>
       <div class="grid-container">
         {[...Array(5).keys()].map((repo) => (
-          <FetchAPI class="grid-item" key={repo + 1} URL={`https://flaskappspm-hij6xhfi2q-uc.a.run.app/fetch/issues/closed/repo=${repo + 1}`} />
+          <FetchAPI class="grid-item" key={repo + 1} URL={`https://flaskapp-lt5guyluea-uc.a.run.app/fetch/issues/closed/repo=${repo + 1}`} />
         ))}
       </div>
     </div>
@@ -79,13 +79,13 @@ export function Requirement6(){
   return (
     <div class="main-div">
     <h1>Requirement 7: A Stack-Bar Chart to plot the created and closed issues for every Repo</h1>
-      <FetchAPI class="grid-item" URL="https://flaskappspm-hij6xhfi2q-uc.a.run.app/fetch/issues/stacked" />
+      <FetchAPI class="grid-item" URL="https://flaskapp-lt5guyluea-uc.a.run.app/fetch/issues/stacked" />
   </div>
   )
 }
 
 let repos = ["openai/openai-cookbook","elastic/elasticsearch","openai/openai-python","milvus-io/pymilvus/","SebastianM/angular-google-maps"];
-let server_url = "https://forecastflaskapp-lwfb57gjeq-uc.a.run.app";
+let server_url = "https://forecastapp-2p55nuhhsq-uc.a.run.app";
 
 export function Requirement8_1(){
   return (
